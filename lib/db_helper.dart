@@ -4,17 +4,17 @@ import 'package:todo_app/task_model.dart';
 
 class DbHelper
 {
-  static Database? database;
+  static Database? myDatabase;
 
   Future<Database?> createDatabase() async
   {
-    if(database != null)
+    if(myDatabase != null)
     {
-      return database;
+      return myDatabase;
     }else
     {
       String path = join(await getDatabasesPath() , 'roadmap.db');
-      Database myDatabase = await openDatabase(
+      myDatabase = await openDatabase(
           path,
           version: 1,
           onCreate: (db , v)
