@@ -299,7 +299,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             validator: (value) {
                               if(value!.isEmpty)
                               {
-                                return 'It must be empty';
+                                return 'It must not be empty';
                               }else
                               {
                                 return null;
@@ -326,7 +326,7 @@ class _HomeScreenState extends State<HomeScreen> {
                             validator: (value) {
                               if(value!.isEmpty)
                               {
-                                return 'It must be empty';
+                                return 'It must not be empty';
                               }else
                               {
                                 return null;
@@ -363,7 +363,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               validator: (value) {
                                 if(value!.isEmpty)
                                 {
-                                  return 'It must be empty';
+                                  return 'It must not be empty';
                                 }else
                                 {
                                   return null;
